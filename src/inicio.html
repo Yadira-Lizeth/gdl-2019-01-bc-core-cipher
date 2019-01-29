@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html land="es">
+    <head>
+        <meta charset="utf-8">
+        <title>CIFRAR Y/O DESCIFRAR</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="cipher.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div align="center">
+            <h3>¿Qué quieres hacer?</h3>
+        <p>  
+            Elige una opción
+            <select name="eligir">
+                <option valua="cifrar">Cifrar</option>
+                <option valua="descifrar">Descifrar</option>
+            </select>
+        </p>
+        <p>
+                <label for="desplazamientos">Desplazamientos</label>
+                <input type="number" name="numero" id="numero" min="0" max="1000000" placeholder="0">
+        </p>
+            <div>
+                 <input name="ingresar texto" id="contenido" type="text" size="40" style="height:300px; text-transform:uppercase;" required class="form-control" placeholder="Ingresa tu texto aquí...">
+                 <button onclick="myFunction()">Convertir</button>
+                 <input name="resultado" id="resultado" type="text" size="40" style="height:300px" required class="form-control" placeholder="Resultado...">
+             </div>
+        </div>
+             
+    </body>
+
+</html>
