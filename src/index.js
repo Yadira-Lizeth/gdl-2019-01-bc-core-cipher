@@ -1,32 +1,15 @@
 'use strict'
 
-
 function encode() {
-    //var n = parseInt(prompt ("introduce el desplzamiento"));
-    var resultado ="";
-    var n = parseInt(document.getElementById("numero").value);
-    //var texto = prompt ("introduce tu texto");
-    var texto = document.getElementById("contenido").value;
+    var offset = parseInt(document.getElementById("offset").value);
+    var texto = document.getElementById("string").value;
     texto = String(texto).toUpperCase();
-    for (var x = 0; x < texto.length; x++) {
-        var code = (texto.charCodeAt(x) - 65 + n) % 26 + 65;
-        resultado = resultado+String.fromCharCode(code);
-        
-    }
-    document.getElementById("resultado").value=resultado;
+    document.getElementById("resultado").value = window.cipher.encode(offset, texto);
 }
 
 function decode() {
-    //var n = parseInt(prompt ("introduce el desplzamiento"));
-    var resultado ="";
-    var n = parseInt(document.getElementById("numero").value);
-    //var texto = prompt ("introduce tu texto");
-    var texto = document.getElementById("contenido").value;
+    var offset = parseInt(document.getElementById("offset").value);
+    var texto = document.getElementById("string").value;
     texto = String(texto).toUpperCase();
-    for (var x = 0; x < texto.length; x++) {
-        var code = (texto.charCodeAt(x) + 65 - n) % 26 + 65;
-        resultado = resultado+String.fromCharCode(code);
-        
-    }
-    document.getElementById("resultado").value=resultado;
+    document.getElementById("resultado").value = window.cipher.decode(offset, texto);
 }

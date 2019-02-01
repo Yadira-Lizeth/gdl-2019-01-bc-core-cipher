@@ -1,4 +1,9 @@
 body {
     background-color: AliceBlue ;
   }
-  
+textarea { 
+  resize: none; 
+  overflow:auto;resize:none; 
+  text-transform:uppercase;
+  border: 2px solid DodgerBlue;
+}

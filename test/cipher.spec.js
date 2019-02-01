@@ -39,9 +39,20 @@ describe('cipher', () => {
       assert.equal(typeof cipher.decode, 'function');
     });
 
+    
+
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
       assert.equal(cipher.decode(33, "HIJKLMNOPQRSTUVWXYZABCDEFG"), "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
+
+    /*it('debería retornar "A" para "B" con offset 1', () => {
+      assert.equal(cipher.encode(1, "A"), "B");
+    });
+
+    it('true', () => {
+      assert.equal(true, true);
+    });
+    */
     //
     // Hacker edition
     //

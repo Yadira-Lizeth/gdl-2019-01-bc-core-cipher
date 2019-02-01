@@ -19,13 +19,18 @@
         </p>-->
         <p>
                 <label for="desplazamientos">Desplazamientos</label>
-                <input type="number" name="numero" id="numero" min="0" max="1000000" placeholder="0">
+                <input type="number" name="numero" id="offset" min="0" max="1000000" placeholder="0">
         </p>
             <div>
-                 <input name="ingresar texto" id="contenido" type="text" size="40" style="height:300px; text-transform:uppercase; border: 2px solid DodgerBlue;" required class="form-control" placeholder="Ingresa tu texto aquí...">
+                <!-- <input name="ingresar texto" id="string" type="text" size="40" style="height:300px; text-transform:uppercase; border: 2px solid DodgerBlue;" required class="form-control" placeholder="Ingresa tu texto aquí...">-->
+                 <textarea rows="13" cols="50" id="string" placeholder="Ingresa tu texto aquí..."></textarea>
+
                  <button onclick="encode()">Cifrar</button>
                  <button onclick="decode()">Descifrar</button>
-                 <input name="resultado" id="resultado" type="text" size="40" style="height:300px; text-transform:uppercase; border: 2px solid DodgerBlue;" " required class="form-control" placeholder="Resultado...">
+
+                 <textarea rows="13" cols="50" id="string" id="resultado" placeholder="Resultado..."></textarea>
+
+                 <!--<input name="resultado" id="resultado" type="text" size="40" style="height:300px; text-transform:uppercase; border: 2px solid DodgerBlue;" " required class="form-control" placeholder="Resultado..."> -->
                  
             </div>
         </div>
